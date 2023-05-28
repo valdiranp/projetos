@@ -16,4 +16,5 @@ if __name__ == "__main__":
                      
        dados = spark.read.csv(infile, header=False, inferSchema = True)
        dados.write.format(formato).save(outdir)
-       spark.stop()   
+       spark.stop()
+        
